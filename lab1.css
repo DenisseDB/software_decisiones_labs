@@ -1,0 +1,35 @@
+/*estilos de pie de pagina footer*/
+#matricula{
+  text-align: right;
+}
+#intro{
+  text-align: center;
+  color: #B33AB8;
+}
+#aficiones{
+  color: #DB80DF;
+  text-decoration: underline
+}
+
+#datos{
+  color: #DB80DF;
+  text-decoration: underline
+}
+
+footer{
+  position: relative;
+  margin-top:-10px;
+  width: 100%;
+  padding: 50px;
+  background: #D56ADA;
+  clear: both; /* poner el elemento footer debajo del anterior*/
+  text-align: center;
+  color: #fff;
+}
+#foto{
+  padding: 20px;
+  margin: 15px;
+  border: 2px solid pink;
+  float: right;
+  width: 200px;
+}
