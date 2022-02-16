@@ -1,4 +1,17 @@
-/*estilos de pie de pagina footer*/
+
+h1{
+  background-color: pink;
+}
+
+
+
+body{
+  margin: 0 auto;
+  max-width: 50em;
+  max-height: 1.5;
+  padding: 4em 1em;
+}
+
 #matricula{
   text-align: right;
 }
@@ -6,6 +19,12 @@
   text-align: center;
   color: #B33AB8;
 }
+
+#intro:hover{
+  text-align: center;
+  color: yellow;
+}
+
 #aficiones{
   color: #DB80DF;
   text-decoration: underline
@@ -16,6 +35,7 @@
   text-decoration: underline
 }
 
+/*estilos de pie de pagina footer*/
 footer{
   position: relative;
   margin-top:-10px;
@@ -26,6 +46,7 @@ footer{
   text-align: center;
   color: #fff;
 }
+
 #foto{
   padding: 20px;
   margin: 15px;
