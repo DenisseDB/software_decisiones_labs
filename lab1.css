@@ -1,56 +1,12 @@
-
-h1{
-  background-color: pink;
-}
-
-
-
-body{
-  margin: 0 auto;
-  max-width: 50em;
-  max-height: 1.5;
-  padding: 4em 1em;
-}
-
-#matricula{
-  text-align: right;
-}
-#intro{
-  text-align: center;
-  color: #B33AB8;
-}
-
-#intro:hover{
-  text-align: center;
-  color: yellow;
-}
-
-#aficiones{
-  color: #DB80DF;
-  text-decoration: underline
-}
-
-#datos{
-  color: #DB80DF;
-  text-decoration: underline
-}
-
-/*estilos de pie de pagina footer*/
-footer{
-  position: relative;
-  margin-top:-10px;
-  width: 100%;
-  padding: 50px;
-  background: #D56ADA;
-  clear: both; /* poner el elemento footer debajo del anterior*/
-  text-align: center;
-  color: #fff;
-}
-
-#foto{
-  padding: 20px;
-  margin: 15px;
-  border: 2px solid pink;
-  float: right;
-  width: 200px;
-}
+body{margin:0 auto;max-width:50em;max-height:1.5;padding:4em 1em;background:pink}
+h3{color:#b33ab8;text-decoration:underline}
+#matricula{text-align:right}
+#intro{text-align:center;color:#b33ab8}
+#intro:hover{text-align:center;color:#ff0}
+.respuestaHTML{width:550px;height:190px;border-radius:20px;background-color:#e9ea97;font-style: italic;font-size: 110%}
+.respuestaHTML1{width:550px;height:50px;border-radius:20px;background-color:#e9ea97;font-style: italic;font-size: 120%}
+.respuestaCSS{width:550px;height:100px;border-radius:20px;text-align:center;background-color:#d5e7bc;font-style: italic;font-size: 100%}
+.columnas{width:100%;margin:auto}.columna2{width:22.%;float:left}
+footer{position:relative;margin-top:-10px;width:100%;padding:50px;background:#d56ada;clear:both;text-align:center;color:#fff}
+#foto{padding:20px;margin:15px;border:2px solid #ff0;float:right;width:200px}
+ul, li   { margin-left: 20px }
