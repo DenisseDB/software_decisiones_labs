@@ -6,14 +6,90 @@
   </head>
 
   <body>
+    <!-- datos academicos -->
+    <section id=matricula>
+      <h4> Elaborado por: </h4>
+      <p> Denisse Dominguez Bolaños </p>
+      <p> A01702603 </p>
+      <p> A01702603@tec.mx </p>
+    </section>
+    <!-- preguntas con respuestas -->
+    <h2>Preguntas y respuestas</h2>
+      <ol>
+      <li> ¿Qué diferencias y semejanzas hay entre Java y JavaScript? </li>
+      <section class="respuestaJS">
+        <p>Diferencias</p>
+        <ul>
+          <li>JavaScript es interpretado y Java es compilado </li>
+          <li>JavaScript hay variables flexibles y cambiantes, en Java son definidas  </li>
+          <li>El tipo de variable en JavaScript es global, mientras que en Java es definida</li>
+        </ul>
+        <p>Semejanzas</p>
+        <ul>
+          <li>En ambas se puede realizar POO</li>
+          <li>Misma estructura ya que provienen de C </li>
+          <li>Ambas son para ejecucciones de paginas web</li>
+        </ul>
+      </section>
+      </br><li> ¿Qué métodos tiene el objeto Date? </li>
+      <section class="respuestaJS">
+        <ul>
+          <li>getDate: da el dia y el mes (1-31) </li>
+          <li>getDay: da el dia (0-6)  </li>
+          <li>getFullYear: da todo el año en 4 digitos</li>
+          <li>getFullYear: da todo el año en 4 digitos</li>
+          <li>getMinutes: da los minutos (0-59)</li>
+        </ul>
+      </section>
+      </br><li> ¿Qué métodos tienen los arreglos? </li>
+      <section class="respuestaJS">
+        <ul>
+          <li>push(): agregar elementos al arreglo </li>
+          <li>pop(): eliminar un elemento  </li>
+          <li>slice(): crear la copia de un arreglo</li>
+          <li>lenght(): regresa el largo del arreglo</li>
+          <li>split(): separa el arreglo por caracteres</li>
+        </ul>
+      </section>
+      </br><li> ¿Cómo se declara una variable con alcance local dentro de una función? </li>
+      <section class="respuestaJS1">
+        </p> Con alcance local se utiliza let ya que la variable muere al termianr el ciclo en el que fue definido
+      </section>
+      </br><li> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones? </li>
+      <section class="respuestaJS1">
+        </p>dentro de la funcion, sl utilizar la variable como var, nos permite tener un alcance global, es decir,
+        que la variable nunca muere ni es olvidada, permitiendo volver a utilizarla.
+      </section>
+      
+    <!-- ejercicios -->
     <h1> Ejercicos con JavaScript </h1>
+    <p>Dato 1: Arreglo para problema 3: [-4,7,4,-6,8,-5,1,6,9,-14,-73,34,56,-81,0,0,0] </p>
+    <p>Dato 2: Para el Ejercicio 4 lo que se busca es conocer y contar con mayor infromacion acerca de vuelos definidos
+      que salen del aeropuerto Paris-Charles de Gaulle, esto con la finalidad de mostrar en pantalla y que los 
+      pasajeros esten informados sobre su vuelo</p>
+    </p>
+    <!-- ej1 -->
     </br><p> <h3> Ejercico 1 -> creacion de tabla</h3> </p>
-    <div id="tabla"></div>
-    <p>Del arreglo: [-4,7,4,-6,8,-5,1,6,9,-14,-73,34,56,-81,0,0,0] se cuenta con </p>
-    <div id="arreglo1"></div>
-    <div id="inverso"></div>
+    <!-- ej2 -->
     <div id="suma"></div>
-
-  <script src="lab4.js"></script>
+    <!-- ej3 -->
+    <div id="arreglo1"></div>
+    <!-- ej4 -->
+    <div id="promedio"></div>
+    <!-- ej5 -->
+    <div id="inverso"></div>
+    
+    <script src="lab4.js"></script>
   </body>
+
+   <!-- referencias -->
+    <footer> 
+      <h3>Referencias:</h3>
+      <ol>
+        <li>Ceron, M. (s. f.). ¿Qué diferencias hay entre JavaScript y Java? | HACK A BOSS. Hack a Boss. Recuperado 20 de febrero de 2022, de https://www.hackaboss.com/blog/diferencias-javascript-java#:%7E:text=%C2%BFPor%20qu%C3%A9%20tienen%20nombres%20parecidos,en%20JavaScript%2C%20y%20a%20la%20inversa.</li>
+        <li>¿Cuál es la diferencia entre Java vs JavaScript? - Wild Code School. (2019, 25 junio). www.wildcodeschool.com. Recuperado 20 de febrero de 2022, de https://www.wildcodeschool.com/es-ES/blog/diferencia-entre-java-vs-javascript</li>
+        <li>K. (2018, 17 noviembre). Métodos de la clase Date JavaScript. Tutobásico. Recuperado 20 de febrero de 2022, de https://tutobasico.com/date-javascript/</li>
+        <li>Zubikarai, S. (2022, 12 enero). Manual de arreglos en JavaScript: Métodos de arreglos de JS explicados con ejemplos. freeCodeCamp.org. Recuperado 20 de febrero de 2022, de https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/</li>
+      </ol>
+    </footer>
 </html>

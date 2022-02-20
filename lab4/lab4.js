@@ -15,8 +15,7 @@ function tabla_numeros() {
 }
 
 // Del HTML obtenemos el div de tabla para imprimir
-document.getElementById("tabla").innerHTML = tabla_numeros();
-
+document.write(tabla_numeros());
 
 // Ejercio 2, suma de dos numeros aleatorios
 function numeros_aleatorios(){
@@ -42,10 +41,10 @@ function numeros_aleatorios(){
     document.write("</br><h3> Ejercicio 2 -> sumatoria de aleatorio</h3>");
     document.write("Incorrecto, tardaste: " +  + timer + " seg en contestar");
   }
+  return null;
 }
 
 document.getElementById("suma").innerHTML = numeros_aleatorios();
-
 
 // Ejercio 3, extraccion de numeros de un arreglo
 function recorrer_arreglo(){
@@ -65,25 +64,30 @@ function recorrer_arreglo(){
   }
   document.write("</br><h3> Ejercicio 3 -> recorrer arreglo</h3>");
   document.write("Cantidad de 0: " + cont_ceros + ("  Cantidad mayores a 0: " + cont_positivos + "  Cantidad menores a 0: " + cont_negativos));
-  return(cont_ceros, cont_negativos, cont_positivos);
+  return null;
 }
 document.getElementById("arreglo1").innerHTML = recorrer_arreglo();
 
-/* Ejercio 4, promedio de cada renglon de matriz
+//Ejercio 4, promedio de cada renglon de matriz
 function matriz(){
   const matriz = [[1,2,3,4,5],[7,24,65,23,5],[5,72,3,4,65]];
+  // nuevo arreglo para promedios
+  let matriz_promedio = [];
   var suma = 0;
-  var promedio = 0;
-  var suma = 0;
+  // recorrer filas y columnas
   for(let i = 0; i < matriz.length; i++){
     suma = 0;
+    for(let j = 0; j < matriz[i].length; j++){
+      suma += matriz[i][j];
+    }
+    // agregar los promedios a su areglo
+    matriz_promedio.push(suma/matriz[i].length);
   }
-  for(let j = 0; j < matriz.length; i++){
-    suma = suma + matriz[i][j];
-  }
-  promedio = suma / j;
+  document.write("</br><h3> Ejercicio 4 -> promedio</h3>");
+  document.write("El promedio es: " + "[" +  matriz_promedio + "]");
+  return null;
 }
-*/
+document.getElementById("promedio").innerHTML = matriz();
 
 // Ejercio 5, inverso
 let numero = parseInt(prompt("Ingresa un numero: "));
@@ -94,9 +98,43 @@ function inverso_numero(numero){
   document.write("</br><h3> Ejercicio 5 -> numero inverso</h3>");
   inverso =(numero.toString().split('').reverse().join('')); 
   document.write("Su inverso es: " + inverso);
+  return null;
 }
 document.getElementById("inverso").innerHTML = inverso_numero(numero);
 
+// Ejercio 6, poo
+class Vuelo{
+  constructor(origen, destino, linea){
+    this.origen = origen;
+    this.destino = destino;
+    this.linea = linea;
+  }
+  mostrar(){
+    return `${this.origen} es el pais de origen, con un destino a ${this.destino}, operado por ${this.linea} actualmente` ;
+  }
+}
 
+class Aerlolinea extends Vuelo{
+  constructor(origen, destino, linea, estado){
+    super(origen, destino, linea);
+    this.estado = estado;
+  }
+  operando(){
+    return `Origen: ${this.origen}: Destino a ${this.destino}  Aerolinea: ${this.linea}, se encuentra ${this.estado}`;
+  }
+}
 
+const vuelo1 = new Vuelo('Francia', 'Belgica', 'Iberia');
+const vuelo2 = new Vuelo('Francia', 'Mexico', 'AirFrance');
+const vuelo3 = new Aerlolinea('Francia', 'Mexico', 'Iberia', "Embarcando");
+const vuelo4 = new Aerlolinea('Francia', 'Belgica', 'AirFrance', 'Cancelado');
+console.log(vuelo3.operando());
+console.log(vuelo4.operando());
+
+document.write("<h3> Ejercicio 4: Vuelos partientes del Aeropuerto Paris-Charles de Gaulle </h3>");
+document.write("Vuelo 1-> " + vuelo1.mostrar());
+document.write("</br> Vuelo 2-> " + vuelo2.mostrar());
+document.write("<h5>Estado de vuelos: </h5>");
+document.write("Vuelo 1-> " + vuelo3.operando());
+document.write("</br> Vuelo 2-> " + vuelo4.operando());
 

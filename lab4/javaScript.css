@@ -1,3 +1,8 @@
 #tabla_numeros,th,td{
   border: 1px solid black;
 }
+body{margin:0 auto;max-width:50em;max-height:1.5;padding:4em 1em;background:#E5F16A}
+#matricula{text-align:right}
+.respuestaJS{width:800px;height:250px;border-radius:20px;background-color:#D0EA97;font-style: italic;font-size: 110%}
+.respuestaJS1{width:800px;height:90px;border-radius:20px;background-color:#D0EA97;font-style: italic;font-size: 110%}
+footer{background:pink}
