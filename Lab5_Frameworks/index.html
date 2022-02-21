@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- con class hacemos las ediciones necesarias-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>lab5 Frameworks</title>
+    <link  rel="stylesheet" href="frameworks.css">
+  </head>
+  <body>
+    <!-- Encabezado bg: color -->
+    <header class="container-fluid bg-danger d-flex justify-content-center">
+        <!-- mb margen p relleno fs font size -->
+        <p class="text-light mb-0 p-3 fs-5">Denisse Dominguez Bolaños, A01702603, A01702603@tec.mx</p>
+    </header>
+    <!-- nav bar, agregamos un id para editar en css -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 justify-content-center" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <!-- fw como quiero la letra, bold negritas -->
+              <span class="text-danger fs-4 fw-bold">MovieLover</span>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- links del navbar -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Actores</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Directores de peliculas</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Festival de Cannes</a>
+              </li>
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pelicula..." aria-label="Search">
+              <!-- btn-danger es el color del boton -->
+              <button class="btn btn-danger btn-danger-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+       <!-- Imagenes con slider -->
+       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cdn.forbes.com.mx/2019/05/the-greatest-showman-2.jpg" class="d-block w-100" alt="img1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Greatest Showman</h5>
+              <p>Basada en la historia real de fundador del circo Ringling Brothers and Barnum & Bailey Circus</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://toonworldtamil.com/wp-content/uploads/2021/07/100834982-800x450.jpg" class="d-block w-100" alt="img2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Luca</h5>
+              <p>Narra el paso a la madurez de un niño durante un verano inolvidable..</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F204912429%2F18755788877%2F1%2Foriginal.20191212-005026?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=ff0be45784ba447f67d59a1a153cacdb" class="d-block w-100" alt="img3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Bourlesque</h5>
+              <p>Película musical estadounidense, con la aparicion de dos cantantes Christina Aguilera y Cher  </p>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Intro -->
+      <!-- centrar texto de la seccion, bordes y w pt separacion -->
+      <section class="w-auto mx-auto text-center pt-5">
+        <!-- p padding relleno, borde border -->
+      <h1 class="p-3 fs-2 border-top border-3">Un sito con todas <span class="text-danger">tus peliculas favoritas</span></h1>
+      <p class="p-3 fs-5"><span class="text-danger">MovieLover </span>es una pagina web donde podras encontrar todas aquellas peliculas
+        que han sido juzgadas como: </p>
+        <ul>
+            <li>Mejores actores</li>
+            <li>Mejores directores</li>
+            <li>Festival de Cannes</li>
+        </ul>
+    </section>
+    <!-- Cards -->
+    <div class="card-group">
+
+        <div class="card">
+          <img src="https://blogs.ucontinental.edu.pe/wp-content/uploads/2019/12/Caracteristicas-director-cine-quentin-tarantino-universidad-continental.jpg" class="card-img-top" alt="direc">
+          <div class="card-body">
+            <h5 class="Directores">Director de Cine</h5>
+            <p class="card-text">Los directores juegan un papel principal en la grabacion de las peliculas
+            ya que el dirige, organiza, planea y es la mente creativa del estudio de grabacion.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://img.culturacolectiva.com/content_image/2021/2/11/1613071461692-10-peliculas-que-recordaras-por-su-grandiosa-musica.001.jpeg" class="card-img-top" alt="musica">
+          <div class="card-body">
+            <h5 class="card-title">Soundtrack</h5>
+            <p class="card-text">La banda sonora es muy importante en el desarollo de una pelicla, ya que esta es a que deja 
+            a flor de piel todas las emociones, ella es la encargada de jugar con nuestras emociones.</p>
+          </div>
+
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://resize-media.festival-cannes.com/fit-in/3359x2126/media_image/0001/65/ddbb2d1b87cb5b4568c4a936fd7a4aced4503330.jpg" class="card-img-top" alt="cannes">
+          <div class="card-body">
+            <h5 class="card-title">Festival de Cannes</h5>
+            <p class="card-text">No todas las peliclas llegan al gran festival de Cannes, en este festival se realizan premiaciones de alto nivel
+            ya que solo las mejores peliculas, actores, directores, etc, etc logran hacer una pelicula apta para ser premiada.</p>
+          </div>
+
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+       <!-- texto -->
+      <!-- centrar texto de la seccion, bordes y w pt separacion -->
+      <section class="w-auto mx-auto text-center pt-5">
+        <!-- p padding relleno, borde border -->
+      <h1 class="p-3 fs-2 border-top border-3">En esta pagina, podras observar las valoraciones  <span class="text-danger">jueces de cine</span></h1>
+      <p class="p-3 fs-5"><span class="text-danger">Nosotros </span>te ayudamos a concocer la evaluacion dada a peliculas </p>
+      <p class="p-3 fs-5"><span class="text-primary">Luca </span>tuvo esta evaluacion: </p>
+    </section>
+    <!-- Progress -->
+    <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80% Director  </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">60% Soundtrack</div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90% Cannes</div>
+    </div>
+    <!-- siguiente numero -->
+    <nav aria-label="Page navigation example">
+        <!-- justify-content-center: centrar -->
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <p>Preguntas y respuestas</p>
+    </br><p>Describe Material design: Son guias que nos funcionan para contar con diseño visual, interactivo y estetico en la creacion de paginas
+    , este son diseños ya planeados que solo es necesario acoplarlo a nuestra pagina, causando un buen lenguaje visual que nos ayude a crear experiencias
+    uniformes. Todo esta basado en un buen diseño, para un buen lenguaje visual, para lograr esto hay una base de teoria que se debe serguir, sin embargo
+    las guias nos evitan el trabajo de concocer y leer dichas teorias que son en base a los colores, orden, bordes, movimientos, etc
+  </p>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   
+  </body>
+  <footer> 
+    <h3>Referencias:</h3>
+    <ol>
+      <li>Noguera, D. (2021, 16 septiembre). HTTP Error 500, Qué es y cómo solucionar (Internal Server Error). Webempresa. Recuperado 14 de febrero de 2022, de https://www.webempresa.com/blog/que-es-un-error-500-y-como-localizarlo-en-nuestra-web.html</li>
+    </ol>
+  </footer>
+</html>
