@@ -3,6 +3,10 @@
     <head>
         <title>POO</title>
         <link  rel="stylesheet" href="styles.css">
+         <!-- Compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+         <!-- Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
     <body>
         <!-- datos academicos -->
@@ -13,15 +17,81 @@
         <p> A01702603@tec.mx </p>
         </section>
         <!-- Validacion de Password -->
-        <h1>Validacion de Passwords</h1>
-        <p>Bienvenido a password validator, aqui te ayudaremos a crear una contrasena
-        que sea imposible que te la roben"</p>
         <div class="row">
-            <div class="col l3 m4 s12"><label for="contraseña">Introduce tu contrasena ideal: </label><input id="contraseña" type="text"></div>
-            <div id="respuesta_contraseña"></div>
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="contra1" type="text" class="validate">
+                  <label for="contra1">Ingresa tu contrasena</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="contra2" type="tel" class="validate">
+                  <label for="contra2">Verifica tu constrasena</label>
+                </div>
+              </div>
+              <a class="waves-effect waves-light btn" id="verificador">Verificar</a>
+            </form>
         </div>
+
+        <!-- Caarito de compras -->
+        <!-- Producto1 -->
+        <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://m.media-amazon.com/images/I/81XsKZNRwbL._SL1500_.jpg">
+                  <span class="card-title">FANTA</span>
+                </div>
+                <div class="card-content">
+                  <p>$12.</p>
+                </div>
+                <div class="card-action">
+                    <!-- data-name: para que en data set saber que producto se añadio -->
+                    <input id="agregar" type="number" class="validate" data-name="fanta">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Producto2 -->
+        <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/09/beneficios-de-coca-cola-squirrelphotos.jpg">
+                  <span class="card-title">CocaCola</span>
+                </div>
+                <div class="card-content">
+                  <p>$15</p>
+                </div>
+                <div class="card-action">
+                    <input id="agregar" type="number" class="validate" data-name="coca">
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Producto3 -->
+        <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://diariolibre.blob.core.windows.net.optimalcdn.com/images/binrepository/shutterstock-1481415659_17053662_20210817230135-focus-0-0-545-286.jpg">
+                  <span class="card-title">Pepsi</span>
+                </div>
+                <div class="card-content">
+                  <p>$10.</p>
+                </div>
+                <div class="card-action">
+                    <input id="agregar" type="number" class="validate" data-name="pepsi">
+                </div>
+              </div>
+            </div>
+          </div>
+          <a id="total" class="waves-effect waves-light btn">Total: 0</a>
+
         <footer>
             <p>Referencias: </p>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
