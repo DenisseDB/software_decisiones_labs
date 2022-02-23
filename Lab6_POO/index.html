@@ -17,6 +17,7 @@
         <p> A01702603@tec.mx </p>
         </section>
         <!-- Validacion de Password -->
+        <h3>Validador de Contrasenas</h3>
         <div class="row">
             <form class="col s12">
               <div class="row">
@@ -33,7 +34,8 @@
             </form>
         </div>
 
-        <!-- Caarito de compras -->
+        <!-- Carrito de compras -->
+        <h3>Carrito de compras</h3>
         <!-- Producto1 -->
         <div class="row">
             <div class="col s12 m7">
@@ -88,9 +90,31 @@
             </div>
           </div>
           <a id="total" class="waves-effect waves-light btn">Total: 0</a>
+          <!-- Preguntas con respuestas -->
+          <h3>Preguntas y respuestas</h3>
+          <ol>
+          <li> ¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor? </li>
+              <p>JavaScript nos ayuda bastante en la validacion de datos, por lo tanto es de buena pactica chechar que los datos sean validos antes de enviar
+                  los datos, ya que asi se le notifica al usuario si es que uno de los datos que ha introducciodo es erroneo antes de esperar la respuesta del servidor, 
+                  de igual manera, ayuda a la satisfaccion del usurio, puesto que el tiempo de validacion final es menor.
+              </p>
+        <li>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</li>
+             <p>Solo es necesario agregar al codigo un par de palabras reservadas, podemos hacerlo directamente desde la consola, nos vamos a inspector, despues pasamos
+                 a donde se encuentra en formulario, donde en su etiqueta de form añadimos la palabra <strong>novalidate</strong>, esto lo podemos hacer directamente desde
+                 la pagina de html tambien
+                </p>
+            <li>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</li>
+            <p>En terminos de formalidad y satisfaccion al cleinte, es una buena practica el realizar la validación en cada campo, asi el tiempo de validacion
+                final es menor y se atenta a que los datos introducidos coincidan con lo que se esta solicitando, sin embargo, existe el riesgo que un usuario desde
+                la consola agregue el <strong>unvalidate</strong> al formulario, evadiendo las valdiaciones y enviando informacion erronea.
+            </p>
 
         <footer>
             <p>Referencias: </p>
+            <ol>
+                <li>uniwebsidad. (s. f.). 7.3. Validación (Introducción a JavaScript). Recuperado 23 de febrero de 2022, de https://uniwebsidad.com/libros/javascript/capitolo-7/validacion#:%7E:text=Antes%20de%20enviar%20un%20formulario,esperar%20la%20respuesta%20del%20servidor.</li>
+                <li>D. (2020, 9 diciembre). Cómo saltarse la validación HTML5 de un formulario. DIDACTICODE. Recuperado 23 de febrero de 2022, de https://didacticode.com/como-saltarse-validacion-html5-formulario/</li>
+            </ol>
         </footer>
         <script src="index.js"></script>
     </body>
