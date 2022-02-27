@@ -3,6 +3,14 @@ const contrasena2=document.getElementById("contra2");
 const botonVerificar=document.getElementById("verificador");
 const total=document.getElementById("total");
 
+document.getElementById("contra1").onkeyup = () => {
+    document.getElementById("contra_ingresada").innerHTML = "Verifica que " + document.getElementById("contra1").value + " cuente con un numero, un caracter especial y con una mayuscula";
+}
+
+document.getElementById("contra2").onkeyup = () => {
+    document.getElementById("contra_ingresada").innerHTML = "Verifica que " + document.getElementById("contra1").value + " coincida con la contraseña previamente ingresada";
+}
+
 let state  = {
     fanta: {
         precio: 12, cantidad: 0,
