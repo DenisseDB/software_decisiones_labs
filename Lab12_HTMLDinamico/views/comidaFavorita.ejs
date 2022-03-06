@@ -1,6 +1,11 @@
 <%- include('includes/head.ejs') %>
     <h1 id="principal">Este sitio es de platillos favoritos</h1>
-    <h2><%= nombre %> Nuevo platillo favorito:</h2>
+    <!-- % sacar color del arreglo colores -->
+    <% for (let platillo of platillos) { %>
+        <p><%= platillo %></p> 
+        <!-- %= insertar un valor -->
+    <% } %>
+    <h2> Nuevo platillo favorito:</h2>
     <form action="/mod1/comidaFavorita" method="POST">
         <label for="platillo">Platillo: </label>
         <input type="text" id="platillo" name="platillo" placeholder="Curry">

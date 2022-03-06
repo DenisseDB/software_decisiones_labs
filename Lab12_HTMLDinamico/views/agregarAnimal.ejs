@@ -1,6 +1,11 @@
 <%- include('includes/head.ejs') %>
     <h1 id="principal">Este sitio es de animales favoritos</h1>
-    <h2><%= nombre %> Nuevo animal favorito:</h2>
+     <!-- % sacar color del arreglo colores -->
+     <% for (let animal of animales) { %>
+        <p><%= animal %></p> 
+        <!-- %= insertar un valor -->
+    <% } %>
+    <h2> Nuevo animal favorito:</h2>
     <form action="/mod2/agregarAnimal" method="POST">
         <label for="animal">Animal: </label>
         <input type="text" id="animal" name="animal" placeholder="Perro">

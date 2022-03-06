@@ -28,14 +28,14 @@ router.post('/colorFavorito', (request, response, next) => {
 
 router.get("/comidaFavorita", (request, response) => {
     console.log('GET nuevo platillo');
-    response.render('comidaFavorita.ejs');
+    response.render('comidaFavorita.ejs',{platillos:comida_favorita});
 });
 
 router.post('/comidaFavorita', (request, response, next) => {
     console.log('POST nuevo platillo');
     console.log(request.body);
-    comida_favorita.push({nombre: request.body.nombre});
-    response.redirect('/mod1');
+    comida_favorita.push(request.body.platillo);
+    response.redirect('/comidaFavorita');
     response.end()
 });
 
