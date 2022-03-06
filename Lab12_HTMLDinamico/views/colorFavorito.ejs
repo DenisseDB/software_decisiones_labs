@@ -1,8 +1,14 @@
 <%- include('includes/head.ejs') %>
     <h1 id="principal">Este sitio es de colores favoritos</h1>
-    <h2><%= nombre %> Nuevo color favorito:</h2>
+    <!-- % sacar color del arreglo colores -->
+    <% for (let color of colores) { %>
+        <p><%= color %></p> 
+        <!-- %= insertar un valor -->
+    <% } %>
+    <h2> Nuevo color favorito:</h2>
     <form action="/mod1/colorFavorito" method="POST">
-        <label for="nombre">Color: </label>
+        <!-- mandar a post∫ -->
+        <label for="color">Color: </label>
         <input type="text" id="color" name="color" placeholder="Violeta">
         <br><br>
         <input type="submit" value="Enviar">

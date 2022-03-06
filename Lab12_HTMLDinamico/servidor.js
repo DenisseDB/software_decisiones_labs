@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const rutas_comidaColores = require('./routes/mod1.routes.js');
-const rutas_animalesPeliculas = require('./routes/mod2.routes');
+const rutas_animalesPeliculas = require('./routes/mod2.routes.js');
 
 // enviar archivos html por express
 const path = require('path');
@@ -26,8 +26,6 @@ app.use((request, response, next) => {
 
 app.use((request, response,next) => {
     response.statusCode = 404;
-    response.write('<title>Page | Not found</title>');
-    response.write('<h1 id="principal">ERROR 404</h1>');
     response.end();
 });
 

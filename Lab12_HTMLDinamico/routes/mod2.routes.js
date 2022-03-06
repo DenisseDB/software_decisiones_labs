@@ -9,7 +9,7 @@ const pleiculas_favoritas = ["Luca", "Greatest Showman", "Bourlesque"];
 
 router.get("/agregarAnimal", (request, response) => {
     console.log('GET nuevo animal');
-    response.render('agregarAnimal');
+    response.render('agregarAnimal.ejs');
 });
 
 router.post('/agregarAnimal', (request, response, next) => {
@@ -23,7 +23,7 @@ router.post('/agregarAnimal', (request, response, next) => {
 
 router.get("/peliculaFavorita", (request, response) => {
     console.log('GET nueva pelicula');
-    response.render('peliculaFavorita');
+    response.render('peliculaFavorita.ejs');
 });
 
 router.post('/peliculaFavorita', (request, response, next) => {
