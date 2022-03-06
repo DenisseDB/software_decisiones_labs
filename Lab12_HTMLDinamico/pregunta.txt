@@ -1,0 +1,14 @@
+¿Qué otros templating engines existen para node?
+
+Motores de plantillas para node:
+
+1 Pug 
+2 Underscore 
+3 mustache.js
+4 Jade
+5 doT
+6 Nunjucks
+7 Squirrelly
+8 Handlebars.js
+9 Marko
+
