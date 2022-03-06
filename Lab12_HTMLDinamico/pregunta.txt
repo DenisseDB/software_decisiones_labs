@@ -1,7 +1,6 @@
 ¿Qué otros templating engines existen para node?
 
 Motores de plantillas para node:
-
 1 Pug 
 2 Underscore 
 3 mustache.js
@@ -12,3 +11,4 @@ Motores de plantillas para node:
 8 Handlebars.js
 9 Marko
 
+A. (2021, 20 agosto). Node.js templating engine: Top 10 best every developer must know. Software Outsourcing Company. Recuperado 6 de marzo de 2022, de https://www.arrowhitech.com/node-js-templating-engine-top-10-best-every-developer-must-know/
