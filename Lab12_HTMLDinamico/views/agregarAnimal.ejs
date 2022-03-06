@@ -1,0 +1,12 @@
+<%- include('includes/head.ejs') %>
+    <h1 id="principal">Este sitio es de animales favoritos</h1>
+    <h2><%= nombre %> Nuevo animal favorito:</h2>
+    <form action="/mod2/agregarAnimal" method="POST">
+        <label for="nombre">Animal: </label>
+        <input type="text" id="animal" name="animal" placeholder="Perro">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <a href="/mod2"><button type="button">Regresar a la lista </button></a>
+<%- include('includes/foot.ejs') %>

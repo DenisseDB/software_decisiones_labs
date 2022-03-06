@@ -1,0 +1,12 @@
+<%- include('includes/head.ejs') %>
+    <h1 id="principal">Este sitio es de colores favoritos</h1>
+    <h2><%= nombre %> Nuevo color favorito:</h2>
+    <form action="/mod1/colorFavorito" method="POST">
+        <label for="nombre">Color: </label>
+        <input type="text" id="color" name="color" placeholder="Violeta">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <a href="/mod1"><button type="button">Regresar a la lista </button></a>
+<%- include('includes/foot.ejs') %>

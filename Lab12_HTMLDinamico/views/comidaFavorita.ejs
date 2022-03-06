@@ -1,0 +1,12 @@
+<%- include('includes/head.ejs') %>
+    <h1 id="principal">Este sitio es de platillos favoritos</h1>
+    <h2><%= nombre %> Nuevo platillo favorito:</h2>
+    <form action="/mod1/comidaFavorita" method="POST">
+        <label for="nombre">Platillo: </label>
+        <input type="text" id="platillo" name="platillo" placeholder="Curry">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <a href="/mod1"><button type="button">Regresar a la lista </button></a>
+<%- include('includes/foot.ejs') %>
