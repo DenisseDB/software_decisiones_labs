@@ -1,0 +1,8 @@
+El package json nos ayuda a crear un codigo menos pesado y mas eficaz, sobre todo cuando se esta trabajando 
+en equipo, ya que en este se establece las librerias que son implementadas en el codigo, estas son concidas como
+dependencias, como su nombre lo dice, son dependencias para que el codigo funcione de manera ideal y planeada, al ponerlas
+en el paquete se evita agregarlas al codigo, generando mayor eficacia y menor peso.
+
+De igual manera aqui se establecen algunos datos del autor, version, repositorio, etc 
+
+Referencia: Patiño, R. E. (2022, 5 marzo). ¿Qué es el package.json y cómo funciona? Anexsoft. Recuperado 5 de marzo de 2022, de https://anexsoft.com/que-es-el-packagejson-y-como-funciona
