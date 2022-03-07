@@ -1,0 +1,17 @@
+<%- include('includes/head.ejs') %>
+    <h1 id="principal">Este sitio es de peliculas favoritas</h1>
+    <!-- % sacar color del arreglo colores -->
+    <% for (let pelicula of peliculas) { %>
+        <p><%= pelicula.nombre %></p> 
+        <!-- %= insertar un valor -->
+    <% } %>
+    <h2> Nueva pelicula favorito:</h2>
+    <form action="/mod2/peliculaFavorita" method="POST">
+        <label for="nombre">Pelicula: </label>
+        <input type="text" id="pelicula" name="pelicula" placeholder="Up">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <a href="/mod2"><button type="button">Regresar a la lista </button></a>
+<%- include('includes/foot.ejs') %>
