@@ -1,0 +1,10 @@
+<%- include('includes/head.ejs') %>
+    <h1 id="principal">Mis cosas favoritas</h1>
+    <p>En los siguientes links encontraras 4 diferentes listas</p>
+    <br><br>
+    <% if(ultimo_color != ' ') { %>
+        <p>El ultimo color agregado fue: <% = ultimo_color %></p>}
+    <% } %>
+    <br><br>
+    <a href="/mod1/colorFavorito"><button type="button">Lista de colores y comida </button></a>
+<%- include('includes/foot.ejs') %>
