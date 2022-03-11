@@ -1,0 +1,11 @@
+¿Qué beneficios encuentras en el estilo MVC?
+Considero que el principal beneficio es que podemos realizar un porgrama
+mas limipio, ordenado y calsificado, ya que este nos permite separar por
+funcionamiento, visualización, interaccion, entre otros, de igual manera
+nos permite el interactuar y guardar datos del lado el servidor
+
+¿Encuentras alguna desventaja en el estilo arquitectónico MVC?
+Considero que este etilo necesita muchos archivos, codigos carpetas,
+que si, nos funcionan para una mayor organización, sin embargo, esto 
+causa que el peso del programa sea mayor, incrementando la compejidad 
+puesto la cantidad de archivos a realizar y ejecutar
