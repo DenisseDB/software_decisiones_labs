@@ -25,14 +25,15 @@ app.use(session({
     saveUninitialized: false, //Asegura que no se guarde una sesión para una petición que no lo necesita
 }));
 
-app.use('/mod1', rutas_color);
 app.use('/user', rutas_users);
+app.use('/mod1', rutas_color);
 
 
 app.use((request, response, next) => {
-    response.redirect('/mod1');   // funcion que recibe la vista 
-    
+    response.redirect('/user');
+       // funcion que recibe la vista     
 });
+
 
 
 app.use((request, response,next) => {
