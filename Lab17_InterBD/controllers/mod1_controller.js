@@ -49,3 +49,4 @@ exports.listar = (request, response, next) => {
 
 // no hacer el render hasta que la base de datos ns haya respondido
 // hacer lista.ejs
+//
