@@ -1,0 +1,11 @@
+¿Qué beneficios encuentras en el estilo MVC?
+El manejar por capas nos permite tener mayor comprensión, orden y meleabilidad, al igual que es posible
+detectar en donde se ecuentra algun error estetico o técnico ya que de acuerdo al error podemos tener una
+idea sobre la capa que debemos arreglar
+
+
+¿Encuentras alguna desventaja en el estilo arquitectónico MVC?
+La desventaja que encuentro es que son muchas capas, por lo tanto la cantidad de archivos a crear son muchos,
+al igual que al tener varios es probable que el rendimiento no sea el mismo. Al igual que si se desea agregar 
+algo nuevo, totalmente nuevo, no solo basta con hacerlo en un nuevo archivo, sino que se debe crear todas sus
+capas correspondientes
