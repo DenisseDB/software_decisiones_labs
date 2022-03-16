@@ -1,14 +1,14 @@
-//
-// middelware
+// primero definimos las extensiones a utilizar
 const express = require('express');
 const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser'); // Usamos cookies
+const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const rutas_color = require('./routes/mod1.routes.js');
-const rutas_users = require('./routes/user.routes.js');
-// enviar archivos html por express
 const path = require('path');
 const app = express();
+
+// pasamos a las rutas 
+const rutas_animales = require('./routes/animales_routes.js');
+//const rutas_users = require('./routes/user.routes');
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
@@ -18,27 +18,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
-
 app.use(session({
-    secret: 'iuytdjkfcvmcgjvcfhnc',  //mi string secreto que debe ser un string aleatorio muy largo, no como éste'
+    secret: 'oiuhghklkjhghjnbghjnbghjnbvghjbvghjy', 
     resave: false, //La sesión no se guardará en cada petición, sino sólo se guardará si algo cambió 
     saveUninitialized: false, //Asegura que no se guarde una sesión para una petición que no lo necesita
 }));
 
-app.use('/user', rutas_users);
-app.use('/mod1', rutas_color);
+//app.use(csrfProtection); 
 
+/*
+app.use((request, response, next) => {
+    response.locals.csrfToken = request.csrfToken();
+    next();
+});
+*/
+
+app.use('/animales', rutas_animales);
+//app.use('/users', rutas_users);
 
 app.use((request, response, next) => {
-    response.redirect('/user');
+    response.redirect('/animales');
        // funcion que recibe la vista     
 });
-
-
 
 app.use((request, response,next) => {
     response.statusCode = 404;
     response.end();
 });
+
 
 app.listen(3000);

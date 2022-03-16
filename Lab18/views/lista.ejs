@@ -1,0 +1,22 @@
+<%- include('includes/head.ejs') %>
+    <h1 id="principal">Animales bellos</h1>
+    <p>Estos son nuestros animales favoritos</p>
+     
+    <!-- Estilo -->
+    <br><p>Animales:</p>
+    <ul class="list-group">
+       <% for (let animal of animales) { %>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%- animal.nombre %></h5>
+              <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+            </div>
+          </div>
+       <%} %>
+    </ul>
+    <br>
+    <a href="animales/nuevoAnimal"><button type="button" class="btn btn-outline-secondary">Agregar un nuevo Animal</button></a>
+    <br><br>
+<%- include('includes/foot.ejs') %>
+    
