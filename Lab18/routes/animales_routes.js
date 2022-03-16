@@ -1,8 +1,6 @@
 // extensiones a utilizar
 const express = require('express');
-const path = require('path');
 const router = express.Router();
-const filesystem = require('fs');
 //const isAuth = require('../util/is-auth.js');
 
 // llamamos al controller que es donde se "leen" las funciones

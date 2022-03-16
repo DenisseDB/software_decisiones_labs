@@ -1,6 +1,6 @@
 <%- include('includes/head.ejs') %>
     <h1 id="principal">Los animales más bontios</h1>
-    <h2>Agrega un animal </h2>
+    <h2><%= username %>Animales:</h2>
     <form action="/animales/nuevoAnimal" method="POST"> 
         <label for="nombre">Nombre: </label>
         <input type="text" id="nombre" name="nombre" placeholder="Perro">

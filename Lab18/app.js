@@ -3,12 +3,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const path = require('path');
-const app = express();
 
 // pasamos a las rutas 
 const rutas_animales = require('./routes/animales_routes.js');
-//const rutas_users = require('./routes/user.routes');
+const rutas_users = require('./routes/user_routes');
+const path = require('path');
+
+const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
@@ -34,11 +35,11 @@ app.use((request, response, next) => {
 */
 
 app.use('/animales', rutas_animales);
-//app.use('/users', rutas_users);
+app.use('/users', rutas_users);
 
 app.use((request, response, next) => {
-    response.redirect('/animales');
-       // funcion que recibe la vista     
+    response.redirect('/users'); // funcion que recibe la vista    
+    next() 
 });
 
 app.use((request, response,next) => {
