@@ -2,8 +2,7 @@ const User = require('../models/user');
 
 exports.get_login = (request, response, next) => {
     response.render('login', {
-        username: request.session.username ? request.session.username : '',
-        info: ''
+        username: request.session.username ? request.session.username : ''
     }); 
 };
 

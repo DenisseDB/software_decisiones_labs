@@ -1,4 +1,4 @@
-const animales_fav = [{nombre:"Koala"}, {nombre:"Perezoso"}, {nombre:"Elefante"}];
+const db = require('../util/database');
 
 // exporto una clase
 module.exports = class Animal {
@@ -10,17 +10,21 @@ module.exports = class Animal {
 
     //Este método servirá para guardar de manera persistente el nuevo objeto. 
     save() {
-        animales_fav.push(this);
+        return db.execute('INSERT INTO id (nombre) VALUES (?)', 
+            [this.nombre]);
         // push a mi arreglo // se ejectan sobre una instancia
     }
 
     //Este método servirá para devolver los objetos del almacenamiento persistente.
     static fetchAll() {
-        return animales_fav;
+       // return animales_fav;
+        return db.execute('SELECT * FROM id'); //id si es el nombre de la tabla?
     }
 }
 
 
+
+// string obj 
 
 
 /*

@@ -15,6 +15,9 @@
           </div>
        <%} %>
     </ul>
+    <% if (ultimo_animal != '') { %>
+        <p>El último animal agregado fue: <%= ultimo_animal %></p>
+    <% } %>
     <br>
     <a href="animales/nuevoAnimal"><button type="button" class="btn btn-outline-secondary">Agregar un nuevo Animal</button></a>
     <br><br>
