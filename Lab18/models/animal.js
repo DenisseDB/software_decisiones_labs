@@ -4,14 +4,16 @@ const db = require('../util/database');
 module.exports = class Animal {
 
     //Constructor de la clase. Sirve para crear un nuevo objeto, y en él se definen las propiedades del modelo
-    constructor(nuevo_animal) {
-        this.nombre = nuevo_animal; // se ejectan sobre una instancia
+    constructor(nuevo_nombre, nueva_descripcion, nueva_imagen) { // que es lo que vamos a usar de la bd
+        this.nombre = nuevo_nombre; 
+        this.descripcion = nueva_descripcion;
+        this.imagen = nueva_imagen;
     } 
 
     //Este método servirá para guardar de manera persistente el nuevo objeto. 
     save() {
-        return db.execute('INSERT INTO id (nombre) VALUES (?)', 
-            [this.nombre]);
+        return db.execute('INSERT INTO id (nombre, descripcion, imagen) VALUES (?, ?, ?)',  //insertar en la bd, los ? evitar ataques
+            [this.nombre, this.descripcion, this.imagen]); // esto es lo que vamos a instertar
         // push a mi arreglo // se ejectan sobre una instancia
     }
 

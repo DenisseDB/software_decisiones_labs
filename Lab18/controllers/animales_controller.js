@@ -9,12 +9,16 @@ exports.get_nuevo = (request, response, next) => {
 
 exports.post_nuevo = (request, response, next) => {
     console.log(request.body);
-    //paso el push a models
-    const animal  = new Animal(request.body.nombre);
-    // lo guardamos al metodo save 
-    animal.save();
-    response.setHeader('Set-Cookie', 'ultimo__animal'+ animal.nombre + '; HttpOnly'); // agregamos cookie color principal es de a const // con HttpOnly evitamos el acceso a nuestra cookie 
-    response.redirect('/animales');
+    const animal = 
+        new Animal(request.body.nombre, request.body.descripcion, request.body.imagen);
+    animal.save()
+        .then(() => {
+            request.session.info = animal.nombre + ' fue registrado con éxito';
+            response.setHeader('Set-Cookie', 
+                'ultimo_animal='+animal.nombre+'; HttpOnly');
+            response.redirect('/animales');
+        })
+        .catch(err => console.log(err));
     
 };
 

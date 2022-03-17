@@ -7,11 +7,12 @@
     <ul class="list-group">
        <% for (let animal of animales) { %>
         <div class="card" style="width: 18rem;">
-            <img src="https://dam.ngenespanol.com/wp-content/uploads/2022/02/koala.jpg" class="card-img-top" alt="...">
+          <img class="activator" src="<%= animal.imagen %>">
             <div class="card-body">
               <h5 class="card-title"><%- animal.nombre %></h5>
               <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
             </div>
+            <p><%= animal.descripcion %></p>
           </div>
        <%} %>
     </ul>
