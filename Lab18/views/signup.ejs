@@ -1,0 +1,15 @@
+<%- include('includes/head.ejs') %>
+    <h1 id="principal">Este sitio es exclusivo de animales bellos</h1>
+    <h2>Registrate:</h2>
+    <form action="/users/signup" method="POST">
+        <label for="nombre">Nombre completo: </label>
+        <input type="text" id="nombre" name="nombre" >
+        <label for="username">Nombre de usuario: </label>
+        <input type="text" id="username" name="username" >
+        <label for="password">Contraseña: </label>
+        <input type="password" id="password" name="password" >
+        <br><br>
+        <input type="submit" value="Registrar">
+    </form>
+    <br><br>
+<%- include('includes/foot.ejs') %>
