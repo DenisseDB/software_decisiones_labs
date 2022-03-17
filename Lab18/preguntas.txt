@@ -1,0 +1,23 @@
+¿Qué es SQL injection y cómo se puede prevenir?
+SQL injection es un punto debil en el ambito de la seguridad del proyecto ya que este permite 
+a los hackers ver que datos de la base de datos se estan recuperando y esto es peligroso ya que 
+puede recuperar infromacion privada o que supuestamente es cifrada
+
+Prevenir:
+-Usar declaraciones preparadas ->
+- mysql_real_escape_string() para que elimine los caracteres especiales de una cadena
+perdiendo significado en la base de datos
+
+¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?
+Directamente desde el codigo podemos ingresr la consuta a realizar, recuperando la infromacion
+de la base de datos que nos intersa recuperar
+
+¿Qué otras formas de autentificación existen?
+- Identificador y contraseña 
+- Tokens
+- Multi-factores
+
+
+Referencias:
+A. (2020a, noviembre 16). ¿Qué es la inyección SQL y cómo prevenirla en aplicaciones PHP? Geekflare. Recuperado 17 de marzo de 2022, de https://geekflare.com/es/sql-injection-prevention-php/
+

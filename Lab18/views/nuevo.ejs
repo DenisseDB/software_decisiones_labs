@@ -3,6 +3,7 @@
     <h2><%= username %>Animales:</h2>
     <!--Lo que se va a desplegar cuando vayan a agregar un neuvo animal-->
     <form action="/animales/nuevoAnimal" method="POST"> 
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
         <!--Es acorde a las columnas de nuestra bd-->
         <label for="nombre">Nombre: </label>
         <input type="text" id="nombre" name="nombre" placeholder="Pez">
